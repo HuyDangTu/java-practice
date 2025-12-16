@@ -90,5 +90,22 @@ public class Main {
         System.out.println("The smallest number is: " + smallestNumber);
 
     }
+    public static void findTheBiggestNumber(int[] arr){
+        int maxNumber = arr[0];
+        int sndMaxNumber = arr[0];
+        int smallestNumber = arr[0];
+        for (int i: arr){
+            if(i > maxNumber){
+                sndMaxNumber = maxNumber;
+                maxNumber = i;
+            }else if(i < smallestNumber){
+                smallestNumber = i;
+            }
+        }
+        System.out.println("The largest number is: " + maxNumber);
+        System.out.println("The 2nd largest number is: " + sndMaxNumber);
+        System.out.println("The smallest number is: " + smallestNumber);
+
+    }
 
 }
